@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-11 12:45+0000\n"
+"POT-Creation-Date: 2024-07-14 19:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,15 +22,16 @@ msgstr ""
 
 #: task_manager/mixins.py:13
 msgid "You are not logged in! Please log in."
-msgstr ""
+msgstr "Вы не авторизованы! Пожалуйста, выполните вход."
 
 #: task_manager/mixins.py:25
 msgid "You don't have permissions to modify another user."
-msgstr ""
+msgstr "У вас нет прав для изменения другого пользователя."
 
 #: task_manager/templates/base.html:17 task_manager/templates/base.html:51
 #: task_manager/templates/login.html:5
 #: task_manager/templates/users/create.html:6
+#: task_manager/templates/users/update.html:6
 msgid "Task manager"
 msgstr "Менеджер задач"
 
@@ -54,7 +55,7 @@ msgstr "Задачи"
 msgid "Log out"
 msgstr "Выход"
 
-#: task_manager/templates/base.html:64 task_manager/views.py:19
+#: task_manager/templates/base.html:64 task_manager/views.py:21
 msgid "Login"
 msgstr "Вход"
 
@@ -84,12 +85,19 @@ msgid "Creation date"
 msgstr "Дата создания"
 
 #: task_manager/templates/users/index.html:32
+#: task_manager/templates/users/update.html:16
 msgid "Update"
-msgstr "Обновить"
+msgstr "Изменить"
 
 #: task_manager/templates/users/index.html:34
 msgid "Delete"
 msgstr "Удалить"
+
+#: task_manager/templates/users/update.html:11
+#, fuzzy
+#| msgid "Update"
+msgid "Update user"
+msgstr "Обновить"
 
 #: task_manager/users/forms.py:11
 msgid "First name"
@@ -99,19 +107,27 @@ msgstr "Имя"
 msgid "Last name"
 msgstr "Фамилия"
 
-#: task_manager/users/views.py:24
+#: task_manager/users/views.py:25
 msgid "User is successfully registered"
 msgstr "Пользователь успешно зарегистрирован"
 
-#: task_manager/views.py:16
+#: task_manager/users/views.py:34
+msgid "User is successfully updated"
+msgstr "Пользователь успешно изменён"
+
+#: task_manager/users/views.py:35
+msgid "You have no rights to change another user."
+msgstr "У вас нет прав для изменения другого пользователя."
+
+#: task_manager/views.py:18
 msgid "You are logged in"
 msgstr "Вы залогинены"
 
-#: task_manager/views.py:18
+#: task_manager/views.py:20
 msgid "Log In"
 msgstr "Войти"
 
-#: task_manager/views.py:27
+#: task_manager/views.py:29
 msgid "You are logged out"
 msgstr "Вы разлогинены"
 
