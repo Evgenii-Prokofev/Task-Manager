@@ -25,3 +25,16 @@ class UserPermitModifyMixin(UserPassesTestMixin):
         message = _("You don't have permissions to modify another user.")
         messages.error(self.request, message)
         return redirect(reverse_lazy('users'))
+
+
+class DeleteProtectionMixin:
+    
+    protected_message = None
+    protected_url = None
+
+    def post(self, request, *args, **kwargs):
+        try:
+            return super().post(request, *args, **kwargs)
+        except ProtectedError:
+            messages.error(request, self.protected_message)
+            return redirect(self.protected_url)
