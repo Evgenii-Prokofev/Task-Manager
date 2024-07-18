@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.shortcuts import redirect
 from django.utils.translation import gettext_lazy as _
 from django.urls import reverse_lazy
+from django.db.models import ProtectedError
 
 
 class UserLoginMixin(LoginRequiredMixin):
@@ -28,7 +29,7 @@ class UserPermitModifyMixin(UserPassesTestMixin):
 
 
 class DeleteProtectionMixin:
-    
+
     protected_message = None
     protected_url = None
 

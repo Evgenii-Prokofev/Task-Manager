@@ -6,7 +6,10 @@ from django.views.generic import CreateView, UpdateView, DeleteView
 from task_manager.users.models import User
 from task_manager.users.forms import UserCreateForm
 from django.utils.translation import gettext_lazy as _
-from task_manager.mixins import UserLoginMixin, UserPermitModifyMixin, DeleteProtectionMixin
+from task_manager.mixins import (
+    UserLoginMixin, UserPermitModifyMixin,
+    DeleteProtectionMixin,
+)
 
 
 # Create your views here.
@@ -25,7 +28,9 @@ class UserCreateView(SuccessMessageMixin, CreateView):
     success_message = _('User is successfully registered')
 
 
-class UserUpdateView(UserLoginMixin, UserPermitModifyMixin, SuccessMessageMixin, UpdateView):
+class UserUpdateView(
+        UserLoginMixin, UserPermitModifyMixin,
+        SuccessMessageMixin, UpdateView):
 
     template_name = 'users/update.html'
     model = User
@@ -36,9 +41,10 @@ class UserUpdateView(UserLoginMixin, UserPermitModifyMixin, SuccessMessageMixin,
     permission_url = reverse_lazy('users')
 
 
-class UserDeleteView(UserLoginMixin, UserPermitModifyMixin,
-                        DeleteProtectionMixin, SuccessMessageMixin,
-                        DeleteView):
+class UserDeleteView(
+        UserLoginMixin, UserPermitModifyMixin,
+        DeleteProtectionMixin, SuccessMessageMixin,
+        DeleteView):
 
     template_name = 'users/delete.html'
     model = User
