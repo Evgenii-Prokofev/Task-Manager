@@ -25,6 +25,14 @@ LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale/'),
 )
 
+FIXTURE_DIR = (
+    os.path.join(BASE_DIR, "task_manager", "fixtures"),
+)
+
+DUMP_DATA_PATH = os.path.join(
+    BASE_DIR, 'task_manager', 'fixtures', 'dump_data.json'
+)
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/

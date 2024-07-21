@@ -1,0 +1,25 @@
+{
+    "users": {
+        "new_user": {
+            "first_name": "Ivan",
+            "last_name": "Ivanov",
+            "username": "Vanya",
+            "password1": "vanek",
+            "password2": "vanek"
+        },
+        "wrong_update_user": {
+            "first_name": "Roberto",
+            "last_name": "Karlos",
+            "username": "Footbolist",
+            "password1": "goal",
+            "password2": "wrong_password"
+        },
+        "success_update_user": {
+            "first_name": "Roberto",
+            "last_name": "Karlos",
+            "username": "Footbolist",
+            "password1": "goal",
+            "password2": "goal"
+        }
+    }
+}

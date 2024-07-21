@@ -1,0 +1,32 @@
+[
+    {
+        "model": "users.user",
+        "pk": 1,
+        "fields": {
+            "first_name": "Georgiy",
+            "last_name": "Zhukov",
+            "username": "Marshall",
+            "password": "123"
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 2,
+        "fields": {
+            "first_name": "Konstantin",
+            "last_name": "Rokossovskiy",
+            "username": "Winner",
+            "password": "456"
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 3,
+        "fields": {
+            "first_name": "Vasiliy",
+            "last_name": "Chuikov",
+            "username": "Stalingrad",
+            "password": "789"
+        }
+    }
+]
