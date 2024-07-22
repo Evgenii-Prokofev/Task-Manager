@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 
+{% load django_bootstrap5 %}
 {% load i18n %}
 
 {% block title %}{% trans 'Task manager' %}{% endblock %}
@@ -7,11 +8,11 @@
 {% block content %}
 <div class="container wrapper flex-grow-1">
       <h1 class="my-4">
-          {% trans 'Delete user' %}
+          {% trans 'Delete status' %}
       </h1>
 
-<p>{% trans 'Are you sure you want to delete' %} {{ user.get_full_name }}?</p>
-<form action="{% url 'user_delete' user.id %}" method="post">
+<p>{% trans 'Are you sure you want to delete' %} {{ status.name }}?</p>
+<form action="{% url 'statuses_delete' status.id %}" method="post">
   {% csrf_token %}
   <input class="btn btn-danger" type="submit" value="{% trans 'Yes, delete' %}">
 </form>
