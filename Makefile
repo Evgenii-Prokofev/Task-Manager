@@ -16,4 +16,16 @@ start:
 test:
 	python3 manage.py test
 
+local:
+	python3 manage.py makemessages -l ru
+
+trans:
+	python3 manage.py compilemessages
+
+migrations:
+	python3 manage.py makemigrations
+
+migrate:
+	python3 manage.py migrate
+
 

@@ -21,5 +21,13 @@
             "password1": "goal",
             "password2": "goal"
         }
+    },
+    "statuses": {
+        "new_status": {
+            "name": "new"
+        },
+        "update_status": {
+            "name": "on testing"
+        }
     }
 }
