@@ -159,6 +159,20 @@ files = [
 Django = ">=4.2"
 
 [[package]]
+name = "django-filter"
+version = "24.2"
+description = "Django-filter is a reusable Django application for allowing users to filter querysets dynamically."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "django-filter-24.2.tar.gz", hash = "sha256:48e5fc1da3ccd6ca0d5f9bb550973518ce977a4edde9d2a8a154a7f4f0b9f96e"},
+    {file = "django_filter-24.2-py3-none-any.whl", hash = "sha256:df2ee9857e18d38bed203c8745f62a803fa0f31688c9fe6f8e868120b1848e48"},
+]
+
+[package.dependencies]
+Django = ">=4.2"
+
+[[package]]
 name = "flake8"
 version = "7.1.0"
 description = "the modular source code checker: pep8 pyflakes and co"
@@ -391,4 +405,4 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "4a93d9e4874c2c88adc5ab08c3d35210b1262644806c473e55d4a0c6dacfea3e"
+content-hash = "a14c7e62751bd62ff182b3c2b37e9d2576ed1475b28d0a5fd0343702c1da9152"

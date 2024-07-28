@@ -41,7 +41,7 @@ DUMP_DATA_PATH = os.path.join(
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
+DEBUG = 'True'
 
 ALLOWED_HOSTS = [
     'webserver',
@@ -63,9 +63,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_bootstrap5',
+    'django_filters',
     'task_manager',
     'task_manager.users',
-    'task_manager.statuses',    
+    'task_manager.statuses',
+    'task_manager.tasks',  
 ]
 
 MIDDLEWARE = [
