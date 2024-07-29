@@ -4,6 +4,7 @@ from django.utils.translation import gettext_lazy as _
 from task_manager.statuses.models import Status
 from task_manager.users.models import User
 
+
 # Create your models here.
 class Task(models.Model):
 
@@ -40,7 +41,7 @@ class Task(models.Model):
         related_name='executor',
         verbose_name=_('Executor')
     )
-    
+
     def __str__(self):
         return self.name
 

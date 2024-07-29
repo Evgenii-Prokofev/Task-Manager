@@ -11,7 +11,7 @@
         {% trans 'Tasks' %}
     </h1>
 
-    <a class="btn btn-primary mb-3" href="{% url 'login' %}" role="button">{% trans 'Create task' %}</a>
+    <a class="btn btn-primary mb-3" href="{% url 'tasks_create'  %}" role="button">{% trans 'Create task' %}</a>
 
     <div class="card mb-3">
         <div class="card-body bg-light">
@@ -39,15 +39,15 @@
                 {% for task in tasks %}
                     <tr>
                         <td>{{ task.id }}</td>
-                        <td><a href="{% url 'login' %}">{{ task.name }}</a></td>
+                        <td><a href="{% url 'task_show' task.id %}">{{ task.name }}</a></td>
                         <td>{{ task.status }}</td>
                         <td>{{ task.author }}</td>
                         <td>{{ task.executor }}</td>
-                        <td>{{ task.date_created|date:"d.m.Y H:i" }}</td>
+                        <td>{{ task.created_at|date:"d.m.Y H:i" }}</td>
                         <td>
-                            <a href="{% url 'login' %}">{% trans 'Update' %}</a>
+                            <a href="{% url 'tasks_update' task.id %}">{% trans 'Update' %}</a>
                             <br>
-                            <a href="{% url 'login' %}">{% trans 'Delete' %}</a>
+                            <a href="{% url 'tasks_delete' task.id %}">{% trans 'Delete' %}</a>
                         </td>
                     </tr>
                 {% endfor %}

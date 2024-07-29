@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load django_bootstrap5 %}
+{% load i18n %}
+
+{% block title %}{% trans 'Task manager' %}{% endblock %}
+
+{% block content %}
+<div class="container wrapper flex-grow-1">
+      <h1 class="my-4">
+          {% trans 'Delete task' %}
+      </h1>
+
+    <p>{% trans 'Are you sure you want to delete' %} {{ task.name }}?</p>
+    <form action="{% url 'tasks_delete' task.id %}" method="post">
+      {% csrf_token %}
+      {% bootstrap_button button_text button_type="submit" button_class="btn btn-primary" %}
+    </form>
+
+</div>
+{% endblock %}
