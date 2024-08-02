@@ -29,5 +29,13 @@
         "update_status": {
             "name": "on testing"
         }
+    },
+    "tasks": {
+        "new_task": {
+            "name": "New project"
+        },
+        "update_task": {
+            "name": "Old project"
+        }
     }
 }
