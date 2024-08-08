@@ -10,7 +10,7 @@ from task_manager.statuses.models import Status
 
 # Create your tests here.
 class TaskCRUDTestCase(TestCase):
-    fixtures = ['tasks.json', 'users.json', 'statuses.json']
+    fixtures = ['tasks.json', 'users.json', 'statuses.json', 'labels.json']
 
     def setUp(self):
         tasks_data = parse_json_data(settings.DUMP_DATA_PATH, "tasks")

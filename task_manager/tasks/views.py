@@ -8,6 +8,7 @@ from task_manager.mixins import UserLoginMixin, AuthorDeletionMixin
 from task_manager.users.models import User
 from task_manager.tasks.models import Task
 from task_manager.tasks.forms import TaskForm
+from task_manager.tasks.filters import TaskFilter
 
 
 # Create your views here.
@@ -15,6 +16,7 @@ class TasksListView(UserLoginMixin, FilterView):
 
     template_name = 'tasks/index.html'
     model = Task
+    filterset_class = TaskFilter
     context_object_name = 'tasks'
     extra_context = {
         'title': _('Tasks'),

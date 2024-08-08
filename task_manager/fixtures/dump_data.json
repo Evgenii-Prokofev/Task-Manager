@@ -30,6 +30,14 @@
             "name": "on testing"
         }
     },
+    "labels": {
+        "new_label": {
+            "name": "New label"
+        },
+        "update_label": {
+            "name": "Red label"
+        }
+    },
     "tasks": {
         "new_task": {
             "name": "New project"
