@@ -25,6 +25,11 @@ trans:
 migrations:
 	python3 manage.py makemigrations
 
+test-coverage:
+	poetry run coverage run manage.py test
+	poetry run coverage report -m --include=task_manager/* --omit=task_manager/settings.py
+	poetry run coverage xml --include=task_manager/* --omit=task_manager/settings.py
+
 migrate:
 	python3 manage.py migrate
 
