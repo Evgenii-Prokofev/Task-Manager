@@ -14,7 +14,7 @@ start:
 	gunicorn task_manager.wsgi:application
 
 test:
-	python3 manage.py test
+	poetry run python3 manage.py test
 
 local:
 	python3 manage.py makemessages -l ru

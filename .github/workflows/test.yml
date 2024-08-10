@@ -1,7 +1,7 @@
 name: run tests
 
 on:
-  - push  
+  - push
 
 jobs:
   build:
@@ -19,7 +19,6 @@ jobs:
         run: |
           pip install poetry
           make install
-          make shell
 
       - name: Run tests
         env:
