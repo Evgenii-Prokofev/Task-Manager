@@ -19,6 +19,7 @@ jobs:
         run: |
           pip install poetry
           make install
+          make shell
 
       - name: Run tests
         env:
