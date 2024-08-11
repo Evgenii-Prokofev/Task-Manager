@@ -3,3 +3,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/43174731d535a701fa51/maintainability)](https://codeclimate.com/github/Evgenii-Prokofev/python-project-52/maintainability)
 ### Готовое к использованию приложение, доступно по следующему адресу:
 https://task-manager-evgenii.onrender.com/
+
+**"Task Manager"** - Веб-приложение для управления задачами, созданное на основе Python и Django framework. Оно позволяет ставить задачи, назначать исполнителей и изменять их статусы. Для работы с системой требуется регистрация и аутентификация.  
