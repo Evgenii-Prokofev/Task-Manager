@@ -14,6 +14,7 @@ https://task-manager-evgenii.onrender.com/
 1. Склонируйте репозиторий с проектом на ваше локальное устройство:
 
 '''
+
 git clone git@github.com:Evgenii-Prokofev/python-project-52.git
 '''
 2. Перейдите в директорию проекта:
