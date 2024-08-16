@@ -5,6 +5,16 @@ description = ""
 authors = ["Евгений <prokofev_619@mail.ru>"]
 readme = "README.md"
 packages = [{include = "task_manager"}]
+classifiers = [
+    "Programming Language :: Python :: ^3.10",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Education",
+    "Operating System :: Unix",
+    "Framework :: Django :: ^5.0.6",
+    "Natural Language :: Russian",
+    "Natural Language :: English",
+    "Topic :: Office/Business :: Groupware"
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
