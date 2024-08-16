@@ -14,21 +14,26 @@ https://task-manager-evgenii.onrender.com/
 1. Склонируйте репозиторий с проектом на ваше локальное устройство:
 '''bash
 git clone git@github.com:Evgenii-Prokofev/python-project-52.git
+'''
 2. Перейдите в директорию проекта:
-
+'''bash
 cd python-project-52
+'''
 3. Установите необходимые зависимости с помощью Poetry:
-
+'''bash
 poetry install
+'''
 4. Создайте файл .env, который будет содержать ваши конфиденциальные настройки:
-
+'''bash
 SECRET_KEY=ваш_ключ
 DATABASE_URL=ваше_значение_External_Database_URL_или_используйте_локальное_подключение
 DEBUG=False
+'''
 5. Выполните команды:
-
+'''bash
 make migrations
-make migrate  
+make migrate
+'''  
 ### Использование:
 Для запуска сервера в продакшн среде с помощью Gunicorn выполните команду:
 
