@@ -334,7 +334,7 @@ msgstr "Пользователь успешно изменен"
 
 #: task_manager/users/tests.py:131 task_manager/users/views.py:51
 msgid "User is successfully deleted"
-msgstr "Пользователь успешно удалён"
+msgstr "Пользователь успешно удален"
 
 #: task_manager/users/views.py:39 task_manager/users/views.py:52
 msgid "You have no rights to change another user."
