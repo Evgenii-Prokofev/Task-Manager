@@ -8,7 +8,7 @@
 {% block content %}
 <div class="container wrapper flex-grow-1">
     <h1 class="my-4">
-          {% trans 'Update task' %}
+          {% trans 'Update status' %}
     </h1>
 <form action="{% url 'statuses_update' status.id %}" method="post">
     {% csrf_token %}

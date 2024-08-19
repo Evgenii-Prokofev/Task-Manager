@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-08 14:41+0000\n"
+"POT-Creation-Date: 2024-08-19 06:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,9 +47,28 @@ msgstr "Метка"
 msgid "Labels"
 msgstr "Метки"
 
-#: task_manager/labels/views.py:29
+#: task_manager/labels/tests.py:23 task_manager/labels/tests.py:49
+#: task_manager/labels/tests.py:67 task_manager/mixins.py:14
+#: task_manager/statuses/tests.py:23 task_manager/statuses/tests.py:49
+#: task_manager/statuses/tests.py:66 task_manager/statuses/tests.py:91
+#: task_manager/tasks/tests.py:26 task_manager/tasks/tests.py:53
+#: task_manager/tasks/tests.py:70 task_manager/tasks/tests.py:90
+#: task_manager/tasks/tests.py:116 task_manager/users/tests.py:58
+#: task_manager/users/tests.py:104
+msgid "You are not logged in! Please log in."
+msgstr "Вы не авторизованы! Пожалуйста, выполните вход."
+
+#: task_manager/labels/tests.py:37 task_manager/labels/views.py:29
 msgid "Label successfully created"
 msgstr "Метка успешно создана"
+
+#: task_manager/labels/tests.py:84 task_manager/labels/views.py:42
+msgid "Label successfully changed"
+msgstr "Метка успешно изменена"
+
+#: task_manager/labels/tests.py:101 task_manager/labels/views.py:57
+msgid "Label successfully deleted"
+msgstr "Метка успешно удалена"
 
 #: task_manager/labels/views.py:31 task_manager/templates/labels/create.html:11
 #: task_manager/templates/labels/index.html:12
@@ -61,10 +80,6 @@ msgstr "Создать метку"
 msgid "Create"
 msgstr "Создать"
 
-#: task_manager/labels/views.py:42
-msgid "Label successfully changed"
-msgstr "Метка успешно изменена"
-
 #: task_manager/labels/views.py:44
 msgid "Change label"
 msgstr "Изменить метку"
@@ -72,10 +87,6 @@ msgstr "Изменить метку"
 #: task_manager/labels/views.py:45 task_manager/tasks/views.py:64
 msgid "Change"
 msgstr "Изменить"
-
-#: task_manager/labels/views.py:57
-msgid "Label successfully deleted"
-msgstr "Метка успешно удалена"
 
 #: task_manager/labels/views.py:58
 msgid "It is not possible to delete a label because it is in use"
@@ -91,15 +102,6 @@ msgstr "Удалить метку"
 #: task_manager/templates/users/delete.html:16
 msgid "Yes, delete"
 msgstr "Да, удалить"
-
-#: task_manager/mixins.py:14 task_manager/statuses/tests.py:23
-#: task_manager/statuses/tests.py:49 task_manager/statuses/tests.py:66
-#: task_manager/statuses/tests.py:91 task_manager/tasks/tests.py:26
-#: task_manager/tasks/tests.py:53 task_manager/tasks/tests.py:70
-#: task_manager/tasks/tests.py:90 task_manager/tasks/tests.py:116
-#: task_manager/users/tests.py:58 task_manager/users/tests.py:104
-msgid "You are not logged in! Please log in."
-msgstr "Вы не авторизованы! Пожалуйста, выполните вход."
 
 #: task_manager/mixins.py:26 task_manager/users/tests.py:69
 #: task_manager/users/tests.py:115
@@ -288,13 +290,16 @@ msgid "Create status"
 msgstr "Создать статус"
 
 #: task_manager/templates/statuses/update.html:11
-#: task_manager/templates/tasks/update.html:11
-msgid "Update task"
-msgstr "Изменить"
+msgid "Update status"
+msgstr "Изменение статуса"
 
 #: task_manager/templates/tasks/show.html:12
 msgid "Task show"
 msgstr "Просмотр задачи"
+
+#: task_manager/templates/tasks/update.html:11
+msgid "Update task"
+msgstr "Изменение задачи"
 
 #: task_manager/templates/users/create.html:17
 msgid "Register"
