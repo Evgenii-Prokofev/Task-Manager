@@ -69,7 +69,7 @@ INSTALLED_APPS = [
     'task_manager.users',
     'task_manager.statuses',
     'task_manager.tasks',
-    'task_manager.labels',  
+    'task_manager.labels',
 ]
 
 MIDDLEWARE = [
@@ -163,7 +163,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-if not DEBUG:    
+if not DEBUG:
     # Tell Django to copy statics to the `staticfiles` directory
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     STATICFILES_STORAGE = \
