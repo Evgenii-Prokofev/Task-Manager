@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "This is a web application that allows you to distribute tasks among users and monitor their performance"
 authors = ["Евгений <prokofev_619@mail.ru>"]
 readme = "README.md"
 packages = [{include = "task_manager"}]
